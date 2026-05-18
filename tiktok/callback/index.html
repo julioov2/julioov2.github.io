@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Connecting TikTok</title>
+</head>
+<body>
+  <p>Connecting TikTok account...</p>
+  <script>
+    const query = window.location.search || "";
+    const hash = window.location.hash || "";
+    window.location.replace("http://127.0.0.1:8787/tiktok/callback" + query + hash);
+  </script>
+</body>
+</html>
